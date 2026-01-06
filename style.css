@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#0f172a;
+}
+header{
+    background:linear-gradient(to right,#38bdf8,#22c55e);
+    color:white;
+    padding:45px 20px;
+    text-align:center;
+}
+
+.star{
+    font-size:30px;
+    margin:5px 0 0;
+    color: #ffbb00; 
+}
+header h1{
+    font-size:48px;
+    margin:0;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.95;
+}
+.search-box{
+    max-width:500px;
+    margin:30px auto 0;
+    display:flex;
+    justify-content:center;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px 18px;
+    border-radius:30px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+.card{
+    background:white;
+    border-radius:22px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card .content{
+    padding:18px;
+}
+
+.card h2{
+    margin:0 0 8px;
+    color:#0ea5e9;
+}
+
+.card p{
+    font-size:14px;
+    margin:5px 0;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    color:white;
+    background:#22c55e;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+}
+footer{
+    background:#e2e8f0;
+    padding:25px;
+    text-align:center;
+    margin-top:40px;
+}
+
+footer h3{
+    margin:0;
+    color:#0ea5e9;
+}
+
+footer p{
+    font-size:14px;
+    opacity:0.8;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0dd5f086;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #cc00ff, #0059ff);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ff00ff, #0059ff);
+}
+html{
+    scroll-behavior: smooth;
+}
