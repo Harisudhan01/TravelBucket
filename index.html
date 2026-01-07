@@ -5,7 +5,7 @@
 <title>Travel Bucket</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="icon"  href="logo.png">    
+<link rel="icon" type="image/png" href="images/logo.png">    
 </head>
 <body>
 <header>
@@ -19,8 +19,8 @@
 
 <div class="container" id="places">
 
-<div class="card">
-<img src="taj.jpg">
+<div class="card" data-place="Taj Mahal" data-image="images/taj.jpg" data-history="The Taj Mahal is an ivory-white marble mausoleum located on the right bank of the Yamuna River in Agra, India. Built in 1632 by Mughal emperor Shah Jahan, it was constructed as a mausoleum for his favorite wife Mumtaz Mahal. The monument is a perfect example of Mughal architecture, combining elements from Persian, Islamic, and Indian architectural styles. It took approximately 22 years and 20,000 workers to complete the construction. In 1983, the Taj Mahal was designated as a UNESCO World Heritage Site and is considered one of the most beautiful buildings in the world." data-slug="taj-mahal">
+<img src="images/taj.jpg">
 <div class="content">
 <h2>Taj Mahal</h2>
 <p>Agra, India</p>
@@ -30,8 +30,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="eiffel.jpg">
+<div class="card" data-place="Eiffel Tower" data-image="images/eiffel.jpg" data-history="The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France. Designed by engineer Gustave Eiffel, it was built for the 1889 World's Fair. Originally intended to be a temporary structure, it was meant to be torn down after the exposition but became a permanent landmark due to its popularity. Standing 330 meters (1,083 feet) tall, it was the world's tallest man-made structure until 1930. The tower has become an iconic symbol of Paris and one of the most recognizable landmarks in the world. Over 300 million people have visited the Eiffel Tower since its construction." data-slug="eiffel-tower">
+<img src="images/eiffel.jpg">
 <div class="content">
 <h2>Eiffel Tower</h2>
 <p>Paris, France</p>
@@ -41,8 +41,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="mal.jpg">
+<div class="card" data-place="Maldives" data-image="images/mal.jpg" data-history="The Maldives is an archipelago nation in the Indian Ocean, located southwest of Sri Lanka and India. Comprising 1,190 coral islands grouped into 26 atolls, it is the world's lowest lying country, with an average elevation of just 1.5 meters above sea level. The Maldives became famous as a tropical paradise destination known for its pristine white sand beaches, crystal-clear turquoise waters, and abundant marine life. The islands are renowned for world-class diving and snorkeling, with vibrant coral reefs and diverse aquatic ecosystems. The country's economy is heavily dependent on tourism, attracting over 1.7 million visitors annually." data-slug="maldives">
+<img src="images/mal.jpg">
 <div class="content">
 <h2>Maldives</h2>
 <p>Indian Ocean</p>
@@ -52,8 +52,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="dubai.jpg">
+<div class="card" data-place="Dubai" data-image="images/dubai.jpg" data-history="Dubai is the second-largest city in the United Arab Emirates, located on the southeast coast of the Persian Gulf. Known for its luxurious lifestyle and modern architecture, Dubai has transformed from a small fishing village into a global city within a few decades. The city is home to the Burj Khalifa, the world's tallest building at 828 meters, and the Palm Jumeirah, an artificial archipelago. Dubai is a major hub for international business, commerce, and trade. The city attracts millions of tourists annually with its world-class shopping malls, pristine beaches, and desert safaris. Despite its modern development, Dubai maintains a rich cultural heritage." data-slug="dubai">
+<img src="images/dubai.jpg">
 <div class="content">
 <h2>Dubai</h2>
 <p>United Arab Emirates</p>
@@ -63,8 +63,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="sant.jpg">
+<div class="card" data-place="Santorini" data-image="images/sant.jpg" data-history="Santorini is a Greek island located in the southern Aegean Sea, part of the Cycladic Islands. Known for its distinctive white-washed buildings with blue domed roofs and breathtaking sunsets, Santorini is one of the most visited destinations in Greece. The island was formed by a massive volcanic eruption around 1600 BCE, which created the famous caldera. The volcanic soil makes Santorini famous for its unique Assyrtiko white wines. The capital, Fira, offers stunning views of the caldera and the deeper blue of the Aegean Sea. Santorini is a romantic destination perfect for honeymoons, vacations, and photography enthusiasts." data-slug="santorini">
+<img src="images/sant.jpg">
 <div class="content">
 <h2>Santorini</h2>
 <p>Greece</p>
@@ -74,8 +74,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="manali.jpg">
+<div class="card" data-place="Manali" data-image="images/manali.jpg" data-history="Manali is a popular hill station located in the state of Himachal Pradesh in northern India, in the state of Himachal Pradesh. Situated at an altitude of 2,050 meters above sea level, it offers a cool climate and scenic beauty. The town is surrounded by apple orchards, pine forests, and snow-capped mountains. Manali is a gateway to the Tibetan Plateau and is known for adventure activities like trekking, mountaineering, paragliding, and skiing. The Beas River, which flows through Manali, is perfect for rafting. The town has a rich history and culture, with ancient temples and traditional Himachali architecture. It attracts tourists year-round, making it one of India's most visited hill stations." data-slug="manali">
+<img src="images/manali.jpg">
 <div class="content">
 <h2>Manali</h2>
 <p>Himachal Pradesh, India</p>
@@ -85,8 +85,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="thai.jpg">
+<div class="card" data-place="Thailand" data-image="images/thai.jpg" data-history="Thailand, officially the Kingdom of Thailand, is a Southeast Asian country known for its rich culture, beautiful temples, and warm hospitality. The capital, Bangkok, is a vibrant metropolis famous for its street food, night markets, and ornate shrines. Thailand has over 40,000 Buddhist temples, showcasing its deep spiritual heritage. The country is famous for its tropical beaches, including Phuket and Krabi, which are popular diving and snorkeling destinations. Thai cuisine is recognized worldwide for its bold and complex flavors. The northern regions are known for mountain landscapes and traditional village experiences. Thailand's affordability, combined with its natural beauty and cultural richness, makes it one of Asia's most visited countries." data-slug="thailand">
+<img src="images/thai.jpg">
 <div class="content">
 <h2>Thailand</h2>
 <p>Thailand</p>
@@ -96,8 +96,8 @@
 </div>
 </div>
 
-<div class="card">
-<img src="himalaya.jpg">
+<div class="card" data-place="Himalaya" data-image="images/himalaya.jpg" data-history="The Himalayas are the world's highest mountain range, spanning approximately 1,500 miles across Asia. They include Mount Everest, the world's tallest peak at 8,848 meters. The Himalayas form a natural boundary between the Indian subcontinent and the Tibetan Plateau. The range is home to diverse ecosystems, from tropical forests to alpine meadows, supporting unique wildlife including snow leopards, red pandas, and Himalayan blue sheep. For centuries, the Himalayas have held great significance in Hindu, Buddhist, and Muslim traditions. The region is a popular destination for trekking, mountaineering, and adventure tourism. Climate change has significantly impacted the glaciers in this range, making conservation efforts critical." data-slug="himalaya">
+<img src="images/himalaya.jpg">
 <div class="content">
 <h2>Himalaya</h2>
 <p>Himalaya</p>
@@ -108,6 +108,16 @@
 </div>
 </div>
 
+<div id="placeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Place Image">
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalHistory"></p>
+        </div>
+    </div>
+</div>
 
 <footer>
     <h3>TRAVEL BUCKET</h3>
@@ -117,6 +127,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
