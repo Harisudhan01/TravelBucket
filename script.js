@@ -35,6 +35,7 @@ function openModal(slug) {
         modalImage.src = data.image;
         modalHistory.textContent = data.history;
         modal.classList.add("show");
+        document.body.classList.add("modal-open");
         // Update URL
         window.location.hash = `#/place/${slug}`;
     }
@@ -45,7 +46,7 @@ cards.forEach(card => {
     card.addEventListener("click", (e) => {
         // Don't open modal if clicking on the map link
         if (e.target.tagName === "A") return;
-        
+
         const slug = card.getAttribute("data-slug");
         openModal(slug);
     });
@@ -54,6 +55,7 @@ cards.forEach(card => {
 // Close modal when close button is clicked
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
     window.location.hash = "#/";
 });
 
@@ -61,6 +63,7 @@ closeBtn.addEventListener("click", () => {
 window.addEventListener("click", (event) => {
     if (event.target === modal) {
         modal.classList.remove("show");
+        document.body.classList.remove("modal-open");
         window.location.hash = "#/";
     }
 });
@@ -69,6 +72,7 @@ window.addEventListener("click", (event) => {
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && modal.classList.contains("show")) {
         modal.classList.remove("show");
+        document.body.classList.remove("modal-open");
         window.location.hash = "#/";
     }
 });
@@ -76,7 +80,7 @@ document.addEventListener("keydown", (event) => {
 // Handle URL routing
 function handleRoute() {
     const hash = window.location.hash.slice(1); // Remove #
-    
+
     if (hash.startsWith("/place/")) {
         const slug = hash.replace("/place/", "");
         if (placesData[slug]) {
@@ -84,6 +88,7 @@ function handleRoute() {
         }
     } else {
         modal.classList.remove("show");
+        document.body.classList.remove("modal-open");
     }
 }
 
